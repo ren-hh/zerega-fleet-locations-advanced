@@ -48,6 +48,8 @@ $.getJSON('data/zerega-fleet-locations.json', function(locations) {
 })
 
 //load substation data
+// Data was created using geojson.io based on the author's personal knowledge
+
   map.on("load", function () {
 
     map.addSource('substation-shapes', {
@@ -117,7 +119,7 @@ const layers = [
 
 'Sanitation Fleet',
 'School Bus Fleet',
-'Varied Fleet',
+'Other Fleet',
 'Substation'
 ];
 const colors = [
